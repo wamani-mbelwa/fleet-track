@@ -1,0 +1,14 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+server:
+  port: 0
+spring:
+  main:
+    banner-mode: "off"
